@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/convalidaciones.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -48,24 +49,43 @@
                 <form id="form-convalidaciones">
                     <div class="form-group">
                         <label for="modulo-a-convalidar">Módulo a convalidar</label>
-                        <input type="text" name="moduloAConvalidar" value="" id="modulo-a-convalidar">
+                        <input type="text" class="form-control" name="moduloAConvalidar" value="" id="modulo-a-convalidar">
                     </div>
                     <div class="form-group">
                         <label for="cilo-a-convalidar">Ciclo a convalidar</label>
-                        <input type="text" name="cicloAConvalidar" value="" id="ciclo-a-convalidar">
+                        <input type="text" class="form-control" name="cicloAConvalidar" value="" id="ciclo-a-convalidar">
                     </div>
                     <div class="form-group">
                         <label for="modulo-aportado">Módulo aportado</label>
-                        <input type="text" name="moduloAportado" value="" id="modulo-aportado">
+                        <input type="text" class="form-control" name="moduloAportado" value="" id="modulo-aportado">
                     </div>
                     <div class="form-group">
                         <label for="cilo-aportado">Ciclo aportado</label>
-                        <input type="text" name="cicloAportado" value="" id="cilo-aportado">
+                        <input type="text" class="form-control" name="cicloAportado" value="" id="cilo-aportado">
                     </div>
                     <input type="submit" name="" value="Crear convalidación"
                 </form>
             </div>
         </div>
     </div>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyBlmHM21CH_Hf2rNbFLjpC5_oTuBjRqB4M",
+          authDomain: "crud-ejemplo-f97e5.firebaseapp.com",
+          projectId: "crud-ejemplo-f97e5",
+          storageBucket: "crud-ejemplo-f97e5.appspot.com",
+          messagingSenderId: "1063504171824",
+          appId: "1:1063504171824:web:10a8d3ea7828f84370eef5",
+          measurementId: "G-S4FKBP1TN8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+      </script>
 </body>
 </html>
